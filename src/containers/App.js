@@ -3,7 +3,9 @@ import CardList from '../components/CardList';
 import SearchBox from '../components/SearchBox';
 import Scroll from '../components/Scroll';
 // import {robots} from './robots';
+import ErrorBoundary from '../components/ErrorBoundary';
 import './App.css';
+
 
 
 class App extends React.Component {
@@ -50,9 +52,8 @@ class App extends React.Component {
 					<CardList robots = {filteredRobots}/>
 				</Scroll>	
 			</div>
-		);
-	}
-		
+			);
+		}
 	}
 }
 
